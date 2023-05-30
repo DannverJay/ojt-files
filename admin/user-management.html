@@ -7,22 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/lvcc-logo.png"> <!-- Set favicon to LVCC logo -->
+        <link rel="shortcut icon" href="../assets/images/lvcc-logo.png"> <!-- Set favicon to LVCC logo -->
 
         <!-- Theme Config Js -->
-        <script src="assets/js/hyper-config.js"></script>
+        <script src="../assets/js/hyper-config.js"></script>
 
         <!-- App css -->
-        <link href="assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="app-style" />
+        <link href="../assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="app-style" />
         <!-- LVCC css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/lvcc.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/lvcc.css">
 
         <!-- Icons css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" /> <!-- link for locale icons from Hyper Kit -->
+        <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" /> <!-- link for locale icons from Hyper Kit -->
 
 		<!-- Datatables css -->
-		<link href="assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
-		<link href="assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+		<link href="../assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
+		<link href="../assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -40,20 +40,20 @@
                             <!-- Logo light -->
                             <a href="index.html" class="logo-light">
                                 <span class="logo-lg">
-                                    <img src="assets/lvcc-logo.png" alt="logo">
+                                    <img src="../assets/lvcc-logo.png" alt="logo">
                                 </span>
                                 <span class="logo-sm">
-                                    <img src="assets/lvcc-logo.png" alt="small logo">
+                                    <img src="../assets/lvcc-logo.png" alt="small logo">
                                 </span>
                             </a>
     
                             <!-- Logo Dark -->
                             <a href="index.html" class="logo-dark">
                                 <span class="logo-lg">
-                                    <img src="assets/lvcc-logo.png" alt="dark logo">
+                                    <img src="../assets/lvcc-logo.png" alt="dark logo">
                                 </span>
                                 <span class="logo-sm">
-                                    <img src="assets/lvcc-logo.png" alt="small logo">
+                                    <img src="../assets/lvcc-logo.png" alt="small logo">
                                 </span>
                             </a>
                         </div>
@@ -154,7 +154,7 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0">
                                                     <div class="notify-icon">
-                                                        <img src="assets/images/users/avatar-2.jpg"
+                                                        <img src="../assets/images/users/avatar-2.jpg"
                                                             class="img-fluid rounded-circle" alt="" />
                                                     </div>
                                                 </div>
@@ -196,7 +196,7 @@
                             <a class="nav-link dropdown-toggle arrow-none nav-user px-2" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-haspopup="false" aria-expanded="false">
                                 <span class="account-user-avatar">
-                                    <img src="assets/images/users/avatar-4.jpg" alt="user-image" width="32"
+                                    <img src="../assets/images/users/avatar-4.jpg" alt="user-image" width="32"
                                         class="rounded-circle">
                                 </span>
                                 <span class="d-lg-flex flex-column gap-1 d-none">
@@ -228,63 +228,156 @@
             </div>
             <!-- ========== Topbar End ========== -->
 
-            <!-- ========== Left Sidebar Start ========== -->
-            <div class="leftside-menu">
+                 <!-- ========== Left Sidebar Start ========== -->
+        <div class="leftside-menu">
 
-                <!-- Brand Logo Light -->
-                <a id="logo-bg" href="PAGES-404.html" class="logo logo-light">
-                    <span class="logo-lg">
-                        <img src="assets/images/lvcc-logo.png" id="logo" alt="logo"> <!-- LVCC logo in side nav -->
-                    </span>
-                    <span class="logo-sm">
-                        <img id="logo-sm" src="assets/images/lvcc-logo.png" alt="small logo"> <!-- LVCC logo in collapsed side nav -->
-                    </span>
-                </a>
-                
-                <!-- Full Sidebar Menu Close Button -->
-                <div class="button-close-fullsidebar">
-                    <i class="ri-close-fill align-middle"></i> <!-- 'x' button used when the side nav is opened and the screensize is small -->
-                </div>
+            <!-- Brand Logo Light -->
+            <a id="logo-bg" href="pages-404.html" class="logo logo-light">
+                <span class="logo-lg">
+                    <img src="../assets/images/lvcc-logo.png" id="logo" alt="logo"> <!-- LVCC logo in side nav -->
+                </span>
+                <span class="logo-sm">
+                    <img id="logo-sm" src="../assets/images/lvcc-logo.png" alt="small logo">
+                    <!-- LVCC logo in collapsed side nav -->
+                </span>
+            </a>
 
-                <!-- Sidebar -left -->
-                <div class="h-100" id="leftside-menu-container" data-simplebar>
-                    <!--- Sidemenu -->
-                    <ul class="side-nav">
-
-                        <li class="side-nav-title">Home</li>
-
-                        <li class="side-nav-item">
-                            <a href="pages-maintenance.html" class="side-nav-link" id="hover">
-                                <i class="uil-home-alt"></i>
-                                <span> Dashboards </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-title">Pages</li>
-
-                        <li class="side-nav-item">
-                            <a href="user-management.html" class="side-nav-link" id="hover">
-                                <i class="ri ri-group-fill"></i>
-                                <span>User Management</span>
-                            </a>
-                        </li>
-    
-                        <li class="side-nav-item">
-                            <a href="batch-schedule.html" class="side-nav-link" id="hover">
-                                <i class="ri-contacts-fill"></i>
-                                <span>Batch Scheduling</span>
-                            </a>
-                        </li>
-
-						
-
-                    </ul>
-                    <!--- End Sidemenu -->
-
-                    <div class="clearfix"></div>
-                </div>
+            <!-- Full Sidebar Menu Close Button -->
+            <div class="button-close-fullsidebar">
+                <i class="ri-close-fill align-middle"></i>
+                <!-- 'x' button used when the side nav is opened and the screensize is small -->
             </div>
-            <!-- ========== Left Sidebar End ========== -->
+
+            <!-- Sidebar -left -->
+            <div class="h-100" id="leftside-menu-container" data-simplebar>
+                <!--- Sidemenu -->
+                <ul class="side-nav">
+
+                    <li class="side-nav-title">Home</li>
+
+                    <li class="side-nav-item">
+                        <a href="../admin/dashboard.html" class="side-nav-link" id="hover">
+                            <i class="uil-home-alt"></i>
+                            <span> Dashboards </span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-title">Pages</li>
+
+                    <li class="side-nav-item">
+                        <a href="../admin/user-management.html" class="side-nav-link active" id="hover">
+                            <i class="ri ri-group-fill"></i>
+                            <span>User Management</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a href="../admin/pages-404.html" class="side-nav-link" id="hover">
+                            <i class="ri-bank-card-2-line"></i>
+                            <span>Setup Billing fees</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a href="../admin/pages-404.html" class="side-nav-link" id="hover">
+                            <i class=" ri-settings-4-fill"></i>
+                            <span>Enrollment Manage</span>
+                        </a>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false"
+                            aria-controls="sidebarEcommerce" class="side-nav-link "id="hover">
+                            <i class="uil-store"></i>
+                            <span> Enrollment Manage </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="sidebarEcommerce">
+                            <ul class="side-nav-second-level mt-2">
+                                <li>
+                                    <a href="#warning-alert-modal" class="" data-bs-toggle="modal"
+                                        data-bs-target="#warning-alert-modal">
+                                        <span>Enrollment Schedule</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#warning-alert-modal" class="" data-bs-toggle="modal"
+                                        data-bs-target="#warning-alert-modal">
+                                        <span>Pending Enrollment</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../admin/new-enrollment-application.html" class="">
+                                        <span>New Enrollment</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../admin/new-enrollment-application.html" class="">
+                                        <span>Currently Enrolled</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../admin/for-data-privacy-orientation.html" class="" >
+                                        <span>DP Orientation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../admin/for-picture-taking.html" class="" >
+                                        Picture Taking</a>
+                                </li>
+                               
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#sidebarEcommerce1" aria-expanded="false"
+                            aria-controls="sidebarEcommerce" class="side-nav-link "id="hover">
+                            <i class="uil-store"></i>
+                            <span> Transfering </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="sidebarEcommerce1">
+                            <ul class="side-nav-second-level mt-2">
+                                <li>
+                                    <a href="#warning-alert-modal" class="" data-bs-toggle="modal"
+                                        data-bs-target="#warning-alert-modal">
+                                        <span>Voluntary Transfer</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#warning-alert-modal" class="" data-bs-toggle="modal"
+                                        data-bs-target="#warning-alert-modal">
+                                        <span>Exclusion</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#warning-alert-modal" class="" data-bs-toggle="modal"
+                                        data-bs-target="#warning-alert-modal">
+                                        <span>Scholarship Grades</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+
+                    <li class="side-nav-item">
+                        <a href="../admin/pages-404.html" class="side-nav-link" id="hover">
+                            <i class=" ri-thumb-up-line"></i>
+                            <span>Feedback & Evaluation</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- ========== Left Sidebar End ========== -->
 
             <!-- ============================================================== -->
             <!-- Start Page Content here -->
@@ -334,7 +427,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="table-user">
-                                                        <img src="assets/images/users/avatar-1.jpg" alt="table-user" class="me-2 rounded-circle" />
+                                                        <img src="../assets/images/users/avatar-1.jpg" alt="table-user" class="me-2 rounded-circle" />
                                                         Paul J. Friend
                                                     </td>
                                                     <td>paul.friend@applicant.laverdad.edu.ph</td>
@@ -351,7 +444,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="table-user">
-                                                        <img src="assets/images/users/avatar-5.jpg" alt="table-user" class="me-2 rounded-circle" />
+                                                        <img src="../assets/images/users/avatar-5.jpg" alt="table-user" class="me-2 rounded-circle" />
                                                         Sean C. Nguyen
                                                     </td>
                                                     <td>sean.nguyen@laverdad.edu.ph</td>
@@ -374,7 +467,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="table-user">
-                                                        <img src="assets/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle" />
+                                                        <img src="../assets/images/users/avatar-3.jpg" alt="table-user" class="me-2 rounded-circle" />
                                                         Ann C. Thompson
                                                     </td>
                                                     <td>ann.thompson@student.laverdad.edu.ph</td>
@@ -397,7 +490,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="table-user">
-                                                        <img src="assets/images/users/avatar-2.jpg" alt="table-user" class="me-2 rounded-circle" />
+                                                        <img src="../assets/images/users/avatar-2.jpg" alt="table-user" class="me-2 rounded-circle" />
                                                         John A. Anderson
                                                     </td>
                                                     <td>john.anderson@laverdad.edu.ph</td>
@@ -420,7 +513,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="table-user">
-                                                        <img src="assets/images/users/avatar-9.jpg" alt="table-user" class="me-2 rounded-circle" />
+                                                        <img src="../assets/images/users/avatar-9.jpg" alt="table-user" class="me-2 rounded-circle" />
                                                         Sarah B. Williams
                                                     </td>
                                                     <td>sarah.williams@applicant.laverdad.edu.ph</td>
@@ -484,23 +577,23 @@
         <!-- END wrapper -->   
         
         <!-- Vendor js -->
-        <script src="assets/js/vendor.min.js"></script>
+        <script src="../assets/js/vendor.min.js"></script>
 
         <!-- Dashboard App js -->
-        <script src="assets/js/pages/demo.dashboard.js"></script>
+        <script src="../assets/js/pages/demo.dashboard.js"></script>
 
         <!-- App js -->
-        <script src="assets/js/app.min.js"></script>
+        <script src="../assets/js/app.min.js"></script>
         <script src="js/app.js"></script>
 
         <!-- Datatables js -->
-		<script src="assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
-		<script src="assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-		<script src="assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-		<script src="assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+		<script src="../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+		<script src="../assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+		<script src="../assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+		<script src="../assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
 
 		<!-- Datatable Init js -->
-		<script src="assets/js/pages/demo.datatable-init.js"></script>
+		<script src="../assets/js/pages/demo.datatable-init.js"></script>
 
     </body>
 </html> 
