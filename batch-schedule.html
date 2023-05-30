@@ -19,11 +19,7 @@
 
         <!-- Icons css -->
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" /> <!-- link for locale icons from Hyper Kit -->
-                                                            
-        <!-- Daterangepicker css -->
-        <link rel="stylesheet" href="assets/vendor/daterangepicker/daterangepicker.css" type="text/css" />
 
-        
 		<!-- Datatables css -->
 		<link href="assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" />
 		<link href="assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css" rel="stylesheet" type="text/css" />
@@ -171,6 +167,9 @@
                                         </div>
                                     </a>
     
+                                    
+    
+                                 
                                 </div>
     
                                 <!-- All-->
@@ -200,12 +199,12 @@
                             <a class="nav-link dropdown-toggle arrow-none nav-user px-2" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-haspopup="false" aria-expanded="false">
                                 <span class="account-user-avatar">
-                                    <img src="assets/images/users/avatar-4.jpg" alt="user-image" width="32"
+                                    <img src="assets/images/users/avatar-1.jpg" alt="user-image" width="32"
                                         class="rounded-circle">
                                 </span>
                                 <span class="d-lg-flex flex-column gap-1 d-none">
-                                    <h5 class="my-0">Juan Dela Cruz</h5>
-                                    <h6 class="my-0 fw-normal">Super Admin</h6>
+                                    <h5 class="my-0">Michael Kaiser</h5>
+                                    <h6 class="my-0 fw-normal">New Applicant</h6>
                                 </span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated profile-dropdown">
@@ -267,77 +266,20 @@
                         <li class="side-nav-title">Pages</li>
 
                         <li class="side-nav-item">
-                            <a  href="school-branches.html" class="side-nav-link" id="hover">
-                                <i class="uil-clipboard-alt"></i>
-                                <span> School Branches </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-item">
-                            <a href="setup-billing.html" data-bs-toggle="collapse" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link" id="hover">
-                                <i class="uil-invoice"></i>
-                                <span> Setup Billing Fees </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-item">
                             <a href="user-management.html" class="side-nav-link" id="hover">
                                 <i class="ri ri-group-fill"></i>
                                 <span>User Management</span>
                             </a>
                         </li>
     
-                    
-						<li class="side-nav-item">
-                            <a data-bs-toggle="collapse" id="hover" href="#sidebarCrm" aria-expanded="false" aria-controls="sidebarCrm" class="active side-nav-link fw-normal">
-                                <i class="uil uil-tachometer-fast"></i>
-                                <span> Batch Scheduling </span>
-                            </a>
-                            <div class="collapse" id="sidebarCrm">
-                                <ul class="side-nav-second-level">
-                                    <li>
-                                        <a href="batch-schedule.html">Batch Schedule</a>
-                                    </li>
-                                    <li>
-                                        <a href="exam-schedule.html">Exam Schedule</a>
-                                    </li>
-                                    <li>
-                                        <a href="interview-schedule.html">Interview Schedule</a>
-                                    </li>
-                                    <li>
-                                        <a href="orientation-schedule.html">Orientation Schedule</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
                         <li class="side-nav-item">
-                            <a href="scholarship-application.html" class="side-nav-link" id="hover">
-                                <i class="uil-file-question-alt"></i>
-                                <span> Scholarship Application </span>
+                            <a href="batch-schedule.html" class="side-nav-link" id="hover">
+                                <i class="ri-contacts-fill"></i>
+                                <span>Batch Scheduling</span>
                             </a>
                         </li>
 
-                        <li class="side-nav-item">
-                            <a href="applicant-screening.html" class="side-nav-link" id="hover"> <!-- class is active, indicating the active page in navigation -->
-                                <i class="uil-users-alt"></i>
-                                <span> Applicant Screening </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-item">
-                            <a href="pages-404.html" class="side-nav-link" id="hover"> <!-- class is active, indicating the active page in navigation -->
-                                <i class="ri-contacts-book-upload-fill"></i>
-                                <span> Transfering </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-item">
-                            <a href="feedback-and-evaluation.html" class="side-nav-link" id="hover"> 
-                                <i class="uil-clipboard-alt"></i>
-                                <span> Feedback & Evaluation </span>
-                            </a>
-                        </li>
+						
 
                     </ul>
                     <!--- End Sidemenu -->
@@ -371,6 +313,7 @@
                             </div>
                         </div>
     
+    
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
@@ -392,14 +335,14 @@
                                                             <input type="text" id="Batch_name" class="form-control" placeholder="Enter Batch Name">
                                                         </div>
                                                         <!-- Date Picker -->
-                                                        <div class="mb-3">
-                                                            <label for="example-date" class="form-label">Start Date</label>
-                                                            <input class="form-control" id="example-date" type="date" name="start date">
+                                                        <div class="mb-3 position-relative" id="datepicker1">
+                                                            <label class="form-label">Start Date</label>
+                                                            <input type="text" class="form-control" data-provide="datepicker" data-date-container="#datepicker1">
                                                         </div>
                                                         <!-- Date Picker -->
-                                                        <div class="mb-3">
-                                                            <label for="example-date" class="form-label">End Date</label>
-                                                            <input class="form-control" id="example-date" type="date" name="enddate">
+                                                        <div class="mb-3 position-relative" id="datepicker2">
+                                                            <label class="form-label">End Date</label>
+                                                            <input type="text" class="form-control" data-provide="datepicker" data-date-container="#datepicker2">
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="School_branch" class="form-label">School Branch</label>
@@ -447,7 +390,7 @@
                                     </div>
                                     <div class="card-body">                                                                
                                         <table id="basic-datatable" class="table dt-responsive nowrap w-100">
-                                            <thead style="background-color: #1F3463; color: #fff;">
+                                            <thead class="table-info">
                                                 <tr>
                                                     <th>Batch Name</th>
                                                     <th>Time Start</th>
@@ -470,8 +413,8 @@
                                                         </div>
                                                     </td>
                                                     <td class="table-action">
-                                                        <a type="button" data-bs-toggle="modal" data-bs-target="#editBatch" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
-                                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-header-modal" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -486,8 +429,8 @@
                                                         </div>
                                                     </td>
                                                     <td class="table-action">
-                                                        <a type="button" data-bs-toggle="modal" data-bs-target="#editBatch" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
-                                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-header-modal" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -502,8 +445,8 @@
                                                         </div>
                                                     </td>
                                                     <td class="table-action">
-                                                        <a type="button" data-bs-toggle="modal" data-bs-target="#editBatch" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
-                                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-header-modal" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -518,8 +461,8 @@
                                                         </div>
                                                     </td>
                                                     <td class="table-action">
-                                                        <a type="button" data-bs-toggle="modal" data-bs-target="#editBatch" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
-                                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-header-modal" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -534,8 +477,8 @@
                                                         </div>
                                                     </td>
                                                     <td class="table-action">
-                                                        <a type="button" data-bs-toggle="modal" data-bs-target="#editBatch" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
-                                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-header-modal" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
+                                                        <a href="javascript: void(0);" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -546,74 +489,8 @@
                         </div>
                     </div>
                     <!-- end of content -->
-                    <!-- Danger Header Modal -->
-                                    
-                    <div id="danger-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header modal-colored-header bg-danger">
-                                    <h4 class="modal-title" id="danger-header-modalLabel">Delete Batch Schedule</h4>
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-hidden="true"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <span>Are you sure you want to delete this batch?</span>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-danger">Save changes</button>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
 
                     <!-- modal -->
-                    <div id="editBatch" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="multiple-oneModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="multiple-oneModalLabel">Edit Batch</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                        <label for="Batch_name" class="form-label">Batch Name</label>
-                                        <input type="text" id="Batch_name" class="form-control" value="Batch 1">
-                                    </div>
-                                    <!-- Date Picker -->
-                                    <div class="mb-3 position-relative" id="datepicker2">
-                                        <label class="form-label">Start Date</label>
-                                        <input type="text" class="form-control" data-provide="datepicker" data-date-container="#datepicker2" value="January 20, 2023">
-                                    </div>
-                                    <!-- Date Picker -->
-                                    <div class="mb-3 position-relative" id="datepicker2">
-                                        <label class="form-label">End Date</label>
-                                        <input type="text" class="form-control" data-provide="datepicker" data-date-container="#datepicker2" value="February 20, 2023">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="School_branch" class="form-label">School Branch</label>
-                                        <select class="form-select" id="School_Branch" name="School_Branch">
-                                            <option selected>LVCC Apalit</option>
-                                            <option>LVCC Caloocan</option>
-                                        </select>
-                                    </div>  
-                                    <div class="mt-2 ml-3">
-                                        <label for="Is_Close" class="form-label">Is Batch Closed?</label>
-                                        <div class="form-check form-check-inline">
-                                            <input type="radio" id="customRadio3" name="customRadio1" class="form-check-input">
-                                            <label class="form-check-label" for="customRadio3">Yes</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input type="radio" id="customRadio4" name="customRadio1" class="form-check-input">
-                                            <label class="form-check-label" for="customRadio4">No</label>
-                                        </div>
-                                    </div>                                              
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-info" data-bs-target="#submit" data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
         
                     <!-- end of modal -->
 
@@ -661,9 +538,6 @@
 		<script src="assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
 		<script src="assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
 
-        <!-- Daterangepicker js -->
-        <script src="assets/vendor/daterangepicker/moment.min.js"></script>
-        <script src="assets/vendor/daterangepicker/daterangepicker.js"></script>
 		<!-- Datatable Init js -->
 		<script src="assets/js/pages/demo.datatable-init.js"></script>
 

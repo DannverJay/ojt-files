@@ -263,77 +263,18 @@
                         <li class="side-nav-title">Pages</li>
 
                         <li class="side-nav-item">
-                            <a  href="school-branches.html" class="side-nav-link" id="hover">
-                                <i class="uil-clipboard-alt"></i>
-                                <span> School Branches </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-item">
-                            <a href="setup-billing.html" class="side-nav-link" id="hover">
-                                <i class="uil-invoice"></i>
-                                <span> Setup Billing Fees </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-item">
-                            <a href="user-management.html" class="side-nav-link" id="hover">
-                                <i class="ri ri-group-fill"></i>
-                                <span>User Management</span>
-                            </a>
-                        </li>
-    
-                    
-						<li class="side-nav-item">
-                            <a data-bs-toggle="collapse" id="hover" href="#sidebarCrm" aria-expanded="false" aria-controls="sidebarCrm" class="side-nav-link fw-normal">
-                                <i class="uil uil-tachometer-fast"></i>
-                                <span> Batch Scheduling </span>
-                            </a>
-                            <div class="collapse" id="sidebarCrm">
-                                <ul class="side-nav-second-level">
-                                    <li>
-                                        <a href="batch-schedule.html">Batch Schedule</a>
-                                    </li>
-                                    <li>
-                                        <a href="exam-schedule.html">Exam Schedule</a>
-                                    </li>
-                                    <li>
-                                        <a href="interview-schedule.html">Interview Schedule</a>
-                                    </li>
-                                    <li>
-                                        <a href="orientation-schedule.html">Orientation Schedule</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="side-nav-item">
-                            <a href="scholarship-application.html" class="side-nav-link" id="hover">
-                                <i class="uil-file-question-alt"></i>
-                                <span> Scholarship Application </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-item">
-                            <a href="applicant-screening.html" class="side-nav-link" id="hover"> <!-- class is active, indicating the active page in navigation -->
-                                <i class="uil-users-alt"></i>
-                                <span> Applicant Screening </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-item">
-                            <a href="pages-404.html" class="side-nav-link" id="hover"> <!-- class is active, indicating the active page in navigation -->
-                                <i class="ri-contacts-book-upload-fill"></i>
-                                <span> Transfering </span>
-                            </a>
-                        </li>
-
-                        <li class="side-nav-item">
                             <a href="feedback-and-evaluation.html" class="side-nav-link" id="hover"> 
                                 <i class="uil-clipboard-alt"></i>
                                 <span> Feedback & Evaluation </span>
                             </a>
                         </li>
+                        <li class="side-nav-item">
+                            <a  href="school-branches.html" class="side-nav-link" id="hover">
+                                <i class="uil-clipboard-alt"></i>
+                                <span> School Branches </span>
+                            </a>
+                        </li>
+				
 
                     </ul>
                     <!--- End Sidemenu -->
@@ -446,7 +387,7 @@
                                     </div>
                                     <div class="card-body pt-0">
                                         <table id="basic-datatable" class="table dt-responsive nowrap w-100">
-                                            <thead style="background-color: #1F3463; color: #fff;">
+                                            <thead>
                                                 <tr>
                                                     <th>Branch Name</th>
                                                     <th>Address 1</th>
@@ -456,7 +397,6 @@
                                                     <th>Logo Header</th>
                                                     <th>Is Main Branch?</th>
                                                     <th>is Active?</th>
-                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
     
@@ -471,10 +411,6 @@
                                                     <td>N/A</td>
                                                     <td>Yes</td>
                                                     <td>Yes</td>
-                                                    <td class="table-action">
-                                                        <a type="button" data-bs-toggle="modal" data-bs-target="#editBranch" class="action-icon text-warning"> <i class="mdi mdi-pencil"></i></a>
-                                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-header-modal" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
-                                                    </td>
     
                                                 </tr>
                                                 <tr>
@@ -486,80 +422,11 @@
                                                     <td>N/A</td>
                                                     <td>No</td>
                                                     <td>Yes</td>
-                                                    <td class="table-action">
-                                                        <a type="button" data-bs-toggle="modal" data-bs-target="#editBranch" class="action-icon text-warning"><i class="mdi mdi-pencil"></i></a>
-                                                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#danger-header-modal" class="action-icon text-danger"> <i class="mdi mdi-delete"></i></a>
-                                                    </td>
-                                                    
+    
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <!-- Danger Header Modal -->
-                                    
-                                        <div id="danger-header-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="danger-header-modalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header modal-colored-header bg-danger">
-                                                        <h4 class="modal-title" id="danger-header-modalLabel">Delete Branch</h4>
-                                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-hidden="true"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <span>Are you sure you want to delete this branch?</span>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-danger">Save changes</button>
-                                                    </div>
-                                                </div><!-- /.modal-content -->
-                                            </div><!-- /.modal-dialog -->
-                                        </div><!-- /.modal -->
-                                        <div id="editBranch" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="multiple-oneModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h4 class="modal-title" id="multiple-oneModalLabel">Edit Branch</h4>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="mb-3">
-                                                            <label for="simpleinput" class="form-label">Branch Name</label>
-                                                            <input type="text" id="simpleinput" class="form-control" value="Apalit">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="simpleinput" class="form-label">Address 1</label>
-                                                            <input type="text" id="simpleinput" class="form-control" value="Sampaloc, Apalit Pampanga">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="simpleinput" class="form-label">Address 2</label>
-                                                            <input type="text" id="simpleinput" class="form-control" value="N/A">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="simpleinput" class="form-label">Contact Number</label>
-                                                            <input type="text" id="simpleinput" class="form-control" value="09973645198">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="simpleinput" class="form-label">Email</label>
-                                                            <input type="text" id="simpleinput" class="form-control" value="lvcc@edu.ph">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="example-fileinput" class="form-label">Logo Header</label>
-                                                            <input type="file" id="example-fileinput" class="form-control">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="simpleinput" class="form-label">Is Main Branch?</label>
-                                                            <input type="text" id="simpleinput" class="form-control" value="Yes">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="simpleinput" class="form-label">Is Active</label>
-                                                            <input type="text" id="simpleinput" class="form-control" value="Yes">
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-bs-target="#multiple-two" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
-                                                    </div>
-                                                </div><!-- /.modal-content -->
-                                            </div><!-- /.modal-dialog -->
-                                        </div><!-- /.modal -->
+    
                                     </div> <!-- end card-body-->
                                 </div> <!-- end card-->
                             </div> <!-- end col-->
